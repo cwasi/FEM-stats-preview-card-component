@@ -1,4 +1,89 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend&display=swap");
+.card {
+  margin: 5rem 0;
+  width: 120rem;
+  height: 50rem;
+  border-radius: 1rem;
+  background-color: #1c1938;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  transition: all 300ms; }
+  @media only screen and (max-width: 75.9em) {
+    .card {
+      width: 100rem; } }
+  @media only screen and (max-width: 64.4em) {
+    .card {
+      width: 50rem;
+      height: 80rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr; } }
+  @media only screen and (max-width: 26em) {
+    .card {
+      width: 40rem;
+      height: 90rem; } }
+  .card__img__container {
+    order: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 1rem 1rem 0;
+    background-image: linear-gradient(#3f0066a9, #3f0066a9), url("../img/image-header-desktop.jpg");
+    background-size: cover; }
+    @media only screen and (max-width: 64.4em) {
+      .card__img__container {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem 1rem 0 0;
+        order: 1; } }
+  .card__body {
+    order: 1;
+    padding: 0 10rem;
+    border-radius: 1rem 0 0 1rem; }
+    @media only screen and (max-width: 75.9em) {
+      .card__body {
+        text-align: center;
+        padding: 0 5rem; } }
+    @media only screen and (max-width: 64.4em) {
+      .card__body {
+        padding: 5rem 3rem;
+        order: 2; } }
+  .card__title {
+    margin-bottom: 2rem;
+    font-size: 3.5rem; }
+  .card__paragraph {
+    margin-bottom: 8rem;
+    color: #b5b3c8bd;
+    line-height: 2.5rem; }
+    @media only screen and (max-width: 64.4em) {
+      .card__paragraph {
+        margin-bottom: 4rem; } }
+    @media only screen and (max-width: 26em) {
+      .card__paragraph {
+        line-height: 3rem; } }
+  .card__lable {
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 64.4em) {
+      .card__lable {
+        flex-direction: column;
+        justify-content: space-between; } }
+  .card__companies, .card__templates {
+    margin-bottom: 3rem; }
+  .card__number {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 700; }
+  .card__text {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #b5b3c8bd; }
+
+.color-violet {
+  color: #a458d2; }
+
 .attribution {
   margin-bottom: 2rem;
   text-align: center; }
@@ -10,15 +95,29 @@
   padding: 0;
   box-sizing: border-box; }
 
-html body {
+html,
+body {
   height: 100%; }
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 64.4em) {
+    html {
+      font-size: 50.5%; } }
 
 body {
-  font-family: "Overpass", sans-serif;
-  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
   color: white;
-  background-color: #1c232b; }
+  background-color: #0a0c1b; }
+  @media only screen and (max-width: 26em) {
+    body {
+      font-size: 1.9rem; } }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%; }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend&display=swap");
 
 *,
 *::before,
@@ -8,18 +8,33 @@
   box-sizing: border-box;
 }
 
-html body {
+html,
+body {
   height: 100%;
 }
 
 html {
   font-size: 62.5%;
+  @media only screen and(max-width:64.4em) {
+    font-size: 50.5%;
+  }
 }
 
 body {
-  font-family: "Overpass", sans-serif;
-  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
   color: $-color-white;
-  background-color: $-color-very-dark-blue;
+  background-color: $-color-dark-violet-2;
+  @media only screen and(max-width:26em) {
+    font-size: 1.9rem;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
 }
